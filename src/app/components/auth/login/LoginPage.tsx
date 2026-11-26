@@ -54,7 +54,7 @@ export default function LoginPage() {
 
   return (
     <div
-      className={`${jakarta.className} min-h-screen w-full flex bg-white text-[#111827] select-none`}
+      className={`${jakarta.className} min-h-screen w-full flex bg-white text-[#111827]`}
     >
       {/* Left Blue Decorative Panel */}
       <div className="hidden lg:flex lg:w-[52%] relative overflow-hidden bg-[#1D35B8] items-center justify-center">
@@ -245,6 +245,16 @@ export default function LoginPage() {
                     </svg>
                   )}
                 </button>
+              </div>
+
+              {/* Forgot Password link */}
+              <div className="flex justify-end mt-2">
+                <Link
+                  href="/forgot-password"
+                  className="text-[12.5px] font-medium text-[#1D35B8] hover:underline transition-colors"
+                >
+                  Forgot Password?
+                </Link>
               </div>
             </div>
 
